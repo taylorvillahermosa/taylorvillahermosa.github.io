@@ -48,7 +48,7 @@ p {
 }
 
 p.grid {
-    font-size: calc(8px + .4vw);
+    font-size: calc(10px + .4vw);
     margin-top: 1%;
     margin-bottom: 0em;
     padding: 0;
@@ -107,7 +107,7 @@ p.job_title {
   }
 
 p.project {
-    font-size: 1.6vw;
+    font-size: calc(18px + 0.4vw);
     font-family: Oswald;
 }
 
