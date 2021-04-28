@@ -3,200 +3,397 @@
 <head>
   <title>Taylor Villahermosa</title>
   <link rel="stylesheet" href="styles.css">
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans|Oswald' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans|Oswald|Ubuntu' rel='stylesheet'>
   <link rel="icon" href="img/tv_logo.png">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
-  <style>
-  
-  </style>
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
-
+<body>
     <div class="f1"> 
-        <p class="hello">Hello! My name is</p>
         <p class="name">Taylor Villahermosa</p>
-        <p class="intro">I am a Data Scientist.
-            I enjoy building data-driven solutions to make life more efficient.</p>
-    </div>
+        <p class="intro">Data Scientist. Always sciencing the data.</p>
+        <p style="text-align:center;">&#9671;&#9671;&#9671;</p>
+        <!-- <p style="text-align:center;">&#9857;&#9858;</p> -->
+        <!-- <hr style="color:white; width:20%;text-align:center; margin-top: 0.2em;"> -->
 
-    <div class="f2">
-        <p class="heading">My Experience</p>
-        <div class="grid-container">
-          <div class="grid-item">
-            <p class="resumedate"><img src="img/SAP_logo.png" style="width: 50%"></p>
-            <p class="resumedate">Palo Alto, CA</p>
-            <p class="resumedate">Jan 2020 - Present</p>
+        <!-- <br> -->
+
+        <!-- section tabs -->
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'Professional Journey')" id="defaultOpen"><p class="tabs">Professional Journey</p></button>
+            <button class="tablinks" onclick="openCity(event, 'Sports Analytics')"><p class="tabs">Sports Analytics</p></button>
+            <button class="tablinks" onclick="openCity(event, 'Contact Me')" id="contact"><p class="tabs">Contact Me</p></button>
+        </div>
+        
+        <!-- 1. Professional Journey -->
+        <div id="Professional Journey" class="tabcontent">
+            <div class="about">
+                <br>
+                <img src="img/SAP_logo.png" width="20%" align="right" style="padding: 1%;" />
+                <!-- <p>
+                    I am a data scientist with a splash of full-stack development experience. Currently, I am working with a global, cross-functional
+                    development team. Together, we are crafting a cloud-based enterprise software solution to help our clients improve efficiency
+                    in their business processes.
+                </p>
+                <p>
+                    In January 2020, I joined the 
+                    <a href="https://www.sap.com/about/careers/students-graduates/graduates/next-talent.html" target="_break">SAP Next Talent Program</a> 
+                    -- a rotational program for data scientists, developers, and designers. I have collaborated with multiple global,
+                    cross-functional teams in an agile environment, gaining invaluable experience in diverse avenues of enterprise software.
+                </p> -->
+                <p>
+                    Hello! I am a data scientist with a splash of full-stack development experience. My go-to programming language is Python, and 
+                    I’m well-versed in R and SQL. 
+                </p>
+                <p>
+                    In January 2020, I joined the SAP Next Talent Program. Throughout this program, I received training in numerous professional
+                    competencies, including agile methodology, project management, sales, and professional branding. I have worked with global, 
+                    cross-functional development teams along multiple avenues of enterprise software.
+                </p>
+                <p>
+                    Alongside my development work at SAP, I strive to share my passion for data science with others. As a Women in Data Science (WiDS) 
+                    ambassador, I collaborated with other women in tech to organized the annual WiDS Silicon Valley @ SAP conference. Additionally, I
+                    have created and delivered presentations to a global audience of interns interested in a career in data science.
+                </p>
+                <p>
+                    <span id="dots"></span>
+                    <span id="more">
+                    Prior to joining SAP, I graduated with honors from the University of Californa, Santa Barbara with a B.S. in Statistics and 
+                    Data Science.
+                    <!-- <br> <br>
+                    more stuff -->
+                    </span>
+                </p>
+                <button onclick="myFunction()" id="myBtn" class="button"> &#9661; &#9661; &#9661;</button>
           </div>
-          
 
-          <!-- <a href="https://www.ariba.com/" target="_break"><b>SAP Ariba</b></a>
-          <a href="https://www.sap.com/about/careers/students-graduates/graduates/next-talent.html" target="_break">SNT Program</a> 
-          <a href="https://www.sap.com/products/business-process-intelligence.html" target="_break"><b>Business Process Intelligence</b></a>
-          <a href="https://www.sap.com/products/sales-cloud.html" target="_break"><b>Cloud for Customer (C4C)</b></a> -->
-
-
-
-
-
-          <div class="grid-item">
-            <p class="job_title">Associate Data Scientist</p>
-              <p class="resumechunk"> I joined SAP through the 
-                <a href="https://www.sap.com/about/careers/students-graduates/graduates/next-talent.html" target="_break">SNT Program</a> 
-                in January 2020. I have worked with multiple cross-functional teams in an agile environment,
-                gaining invaluable experience in diverse avenues of enterprise software.
-              </p>
-              <p class="resumechunk">
-                Currently, I am improving a 
-                Python web service for building usage graphs from tracked user-behavior data. I have designed and developed a machine learning driven sales forecasting model to provide 
-                SAP Cloud for Customer users with a reliable prediction of sales revenue. I enhanced item recommendations and evaluated catalog quality in SAP Ariba Guided Buying with 
-                Bayesian and NLP methods.</p>
-                
-              <p class="resumechunk">
-                Alongside other data scientists, I created and presented data science workshops for a global audience of 
-                interns and new hires. As a Women in Data Science Ambassador, I maintain 
-                the SAP Silicon Valley conference's event website and social media outreach.</p>
-          </div>
-          
-          <div class="grid-item">
-            <p class="resumedate"><img src="img/sb_logo.png" style="width: 30%"></p>
-            <p class="resumedate">Santa Barbara, CA</p>
-            <p class="resumedate">Jan 2019 - Dec 2019</p>
-          </div>  
-          
-          <div class="grid-item">
-            <p class="job_title">Analytics Intern</p>
-            <p class=resumechunk>
-              We leveraged analytical technology to improve UCSB's Division I baseball team (2019 Big West Champions).
-              As Coding Research Team Lead, I led and organized meetings focused on statistical analytics projects to support 
-              player development and game strategy. </p>
-          <p class=resumechunk>
-              I streamlined the process of creating advanced game statistics for player evaluation by automating 
-              calculations with R and SQL. I produced data visualizations and statistical
-              recaps of player performance for <a href="https://twitter.com/SBBaseballData" target="_blank">@SBBaseballData</a> on Twitter. </p>
-          </div>
-          
-          <div class="grid-item">
-            <p class="resumedate"><img src="img/eap_logo.png" style="width: 35%"></p>
-            <p class="resumedate">Santa Barbara, CA</p>
-            <p class="resumedate">Jan 2019 - Dec 2019</p>
-          </div>
-          
-          <div class="grid-item">
-            <p class="job_title">Global Intern</p>
-            <p class=resumechunk>
-              As Technical & Data Analytics Committee Leader, I managed a team of interns and supervised technical projects to
-              improve the study abroad program. I led and organized presentations for outbound and prospective study abroad students.
-            </p>
-          </div>  
+        
         
         </div>
-
-    </div>
-    
-    <div class="f3">
-        <p class="heading">My Projects</p>
-
-        <div class="grid-container2">
-          <!--  titles -->
-          <a href="https://github.com/taylorvillahermosa/ucsb-baseball/blob/main/strike-zones" target="_blank">
-            <div class="grid-item1">
-              <p class="project">NCAA DI Baseball Strike Zones</p>
-            </div>
-          </a>
-          
-          <a href="https://github.com/taylorvillahermosa/ucsb-baseball/blob/main/changeup" target="_blank">
-            <div class="grid-item1">
-              <p class="project">The Impact of Off-Speed Pitches</p>
-            </div>
-          </a>
-
-          <a href="https://github.com/taylorvillahermosa/ucsb-baseball/tree/main/twitter-data-viz" target="_blank">
-            <div class="grid-item1">
-              <p class="project">Data Visualizations</p>
-            </div>
-          </a>
-
-
-          <!--  images  -->
-          <a href="https://github.com/taylorvillahermosa/ucsb-baseball/blob/main/strike-zones" target="_blank">
-            <div class="grid-item2">
-              <img src="img/strike_zone.png" style="height: calc(125px + 6vw); width: auto;">
-            </div>
-          </a>
-          
-          <a href="https://github.com/taylorvillahermosa/ucsb-baseball/blob/main/changeup" target="_blank">
-            <div class="grid-item2">
-              <img src="img/changeup_poster.png" style="height: calc(125px + 6vw); width: auto;">
-            </div>
-          </a>
-
-          <a href="https://github.com/taylorvillahermosa/ucsb-baseball/tree/main/twitter-data-viz" target="_blank">
-            <div class="grid-item2">
-              <img src="img/exit_velo_vs_distance.gif" style="height: calc(125px + 6vw); width: auto;">
-            </div>
-          </a>
-
-
-          <!--  description  -->
-          <div class="grid-item3">
-            <p class="grid">ML-driven strike zone reveals the subjective nature of collegiate baseball umpires.
-            </p>
-          </div>
         
-          <div class="grid-item3">
-            <p class="grid">An analysis of velocity, 
-              vertical movement, and pitch sequencing on changeup success.</p>
-          </div>
 
-          <div class="grid-item3">
-            <p class="grid">Created for <a href="https://twitter.com/SBBaseballData" target="_blank">@SBBaseballData</a></p>
-          </div>
-          
+        <!-- <p>
+            <span id="dots"></span>
+            <span id="more">
+              Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, 
+              te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad. 
+              Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, 
+              te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad
+              Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, 
+              te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad
+            </span>
+        </p>
+        <button onclick="myFunction()" id="myBtn">Read more</button>
+ -->
+
+        <!-- 2. Sports Analytics -->
+        <div id="Sports Analytics" class="tabcontent">
+            <br>
+            <div class="row"> 
+                <!-- Strike Zones -->
+                <div class="column">
+                    <div class="container" id="proj1">
+                        <div class="text-block"><p class="proj_title">That was a strike?!</p></div>
+                        <img src="img/umpire.png" alt="Avatar" class="image">
+                        <!-- <div class="overlay2" onclick="myFunction2()" id="myBtn2" > -->
+                            <div class="overlay2" onclick="expand_proj(1)">
+                                <!-- <a href="#proj1"> -->
+                                    <div class="text">ML-driven strike zone reveals the subjective nature of collegiate baseball umpires.</div>
+                                    <div class="text2">&or;&or;&or;</div>
+                                <!-- </a> -->
+                            
+                        </div>
+                    </div>
+
+                    <span id="dots1"></span>
+                    <div id="more1" style="display: none;">
+                        <div id="text1">
+                            <p class="proj_sub_title">The Real NCAA D1 Baseball Strike Zone</p>
+                            <!-- <span style="float: right; width:20%; margin: 1% 0 0 1%;"><img src="img/ncaa_strike_zone.png" width="15%" align="left"/></span> -->                            
+                            <p>
+                                The strike zone in NCAA Division I Baseball is defined as "the area over home plate from the 
+                                bottom of the kneecaps to the midpoint between the top of the shoulders and the top of the uniform 
+                                pants. The strike zone shall be determined from the batter’s stance as the batter is prepared to 
+                                swing at a pitched ball".</p>
+                            <!-- <span style="float: left; width: 20%; margin: 0% 40% 2% 40%;"><img src="img/ncaa_strike_zone.png"/></span> -->
+                            <p>This strike zone is objectively written but subjectively enforced. To help our team understand what 
+                                the "real" strike zone is, I created a strike zone of pitch locations of greater than 50% called 
+                                strike probability using a generalized additive model.
+                            </p>
+                            <p>
+                                Not suprisingly, umpires call strikes way outside of the defined zone. With this new perception of
+                                the strike zone, our hitters can have better discipline at the plate, and our pitchers can have more
+                                confidence on the edge of the zone.
+                            </p>
+                            <span style="float: left; width: 40%; margin: 0% 40% 2% 30%;"><img src="img/strike_zone_heat_map.png"/></span>
+                            <p><a href="https://github.com/taylorvillahermosa/ucsb-baseball/tree/main/strike-zones" target="_blank">
+                                Full report and code here.</a></p>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Changeups -->
+                <div class="column">
+                    <div class="container" id="proj2">
+                        <div class="text-block"><p class="proj_title">Try pitching it slower</p></div>
+                        <img src="img/pitcher.png" alt="Avatar" class="image">
+                        <div class="overlay2" onclick="expand_proj(2)">
+                            <!-- <a href="#proj2"> -->
+                                <div class="text">Changeups and velocity and spin.</div>
+                                <!-- <div class="text2">&or;&or;&or;</div> -->
+                                <div class="text2">Read more &#8595;</div>
+                            <!-- </a> -->
+                        </div>
+                    </div>
+                    
+                    <span id="dots2"></span>
+                    <div id="more2" style="display: none;">
+                        <div id="text2">
+                            <p class="proj_sub_title">An Analysis on Pitch Velocity, Movement, and Sequencing</p>
+                            <p>
+                                Previous knowledge suggests that the most effective changeups achieve separation 
+                                from the fastball in terms of both velocity and movement. There have been contrasting 
+                                ideas about the importance of vertical break separation in determining the effectiveness 
+                                of a changeup. The goal of this study is to determine the optimal velocity differential 
+                                between a changeup and a fastball, to examine the effects of changeup vs. fastball vertical 
+                                break, and to analyze the effectiveness of certain methods of pitch sequencing.
+                            </p>
+                            <p><a href="https://github.com/taylorvillahermosa/ucsb-baseball/tree/main/changeup" target="_blank">
+                                Full report and code here.</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Viz -->
+                <div class="column">
+                    <div class="container" id="proj3">
+                        <div class="text-block">
+                            <p class="proj_title">Weird flex, but ok</p>
+                          </div>
+                        <img src="img/mike.png" alt="Avatar" class="image">
+                        <div class="overlay2" onclick="expand_proj(3)" >
+                            <!-- <a href="#proj3"> -->
+                                <div class="text">Data visualizations for twitter to show off our stuff.</div>
+                                <div class="text2">&#9660;</div>
+                            <!-- </a> -->
+                            
+                        </div>
+                    </div>
+
+                    <span id="dots3"></span>
+                    <div id="more3" style="display: none;">
+                        
+                        
+                        <div id="text3">
+                            <p class="proj_sub_title">Data Visualizations</p>
+                            <p>I created a series of data visualizations so our fans and players can see how we're performing.</p>
+                            <p>Code for the animated plots is on my <a href="https://github.com/taylorvillahermosa/ucsb-baseball/tree/main/twitter-data-viz" target="_blank">
+                                Github</a>.</p>
+                            <!-- <span style="float: left; width:35%; margin: 0 0 0 10%;"> <img class="img2" src="gif/exit_velo_vs_distance.gif"/></span>
+                            <span style="float: right; width:35%; margin:0 10% 0 0%;"> <img class="img2" src="gif/top_exit_velo.gif"/></span>                             -->
+                            <span style="float: left; width:28%; margin: 0 0 0 7%;">
+                                <blockquote class="twitter-tweet" data-theme="light">
+                                    <p lang="en" dir="ltr">Check out this GIF of all Gaucho hits 
+                                        logged by TrackMan this season! <a href="https://t.co/jdc21PeIHE">pic.twitter.com/jdc21PeIHE</a>
+                                    </p>&mdash; UCSB Baseball Analytics (@SBBaseballData) 
+                                    <a href="https://twitter.com/SBBaseballData/status/1116426906860048384?ref_src=twsrc%5Etfw">
+                                        April 11, 2019</a>
+                                </blockquote> 
+                            </span>
+                            <span style="float: right; width:49%; margin: 0 7% 0% 0;">
+                                <blockquote class="twitter-tweet"><p lang="en" dir="ltr">KJ gives UCSB Baseball its first walk-off of the 2019 season! <a href="https://t.co/96gyNBUFUF">pic.twitter.com/96gyNBUFUF</a></p>&mdash; UCSB Baseball Analytics (@SBBaseballData) <a href="https://twitter.com/SBBaseballData/status/1114722136919175169?ref_src=twsrc%5Etfw">April 7, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                            </span>
+                            <br>
+                            <span style="float: right; width:33%; margin: 0 7% 0 0;">
+                                <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Here&#39;s a cool look at the top 5 exit velos so far this year for the Gauchos: <a href="https://t.co/abOri9zRak">pic.twitter.com/abOri9zRak</a></p>&mdash; UCSB Baseball Analytics (@SBBaseballData) <a href="https://twitter.com/SBBaseballData/status/1103368770305777664?ref_src=twsrc%5Etfw">March 6, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                            </span>
+                            <span style="float: left; width:49%; margin: 0 0 0 7%;">
+                                <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Stay tuned to SB Baseball Analytics for the next few days as we will be highlighting our top offensive performers so far this fall. We&#39;ll kick it off with the max exit velos: <a href="https://t.co/HUC3iydxb4">pic.twitter.com/HUC3iydxb4</a></p>&mdash; UCSB Baseball Analytics (@SBBaseballData) <a href="https://twitter.com/SBBaseballData/status/1193266761262481408?ref_src=twsrc%5Etfw">November 9, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                            </span>
+                            
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+                  
+            </div>
+              
+              
+              
         </div>
-    </div>
-    
-    <div class="f4"> 
-        <p class="heading">Let's connect</p>
-        <div class="col-container">
+        
+        <!-- 3. Contact Me -->
+        <div id="Contact Me" class="tabcontent">
+            <br>
+            <p style="text-align: center;"> Let's chat! Send me a message and I will get back to you soon.</p>
+            <!-- <h3 style="text-align: center; color: white;">Send Me a Message</h3> -->
+            <div class="formcontainer">
+                <form name="gform" id="gform" enctype="text/plain"
+                action="https://docs.google.com/forms/d/e/1FAIpQLSe7x-RqDh1p0TnnEY7btdOcaZAIqhg_hIl7MOIKmjJqGkfSgw/formResponse?"
+                target="hidden_iframe" onsubmit="submitted=true;">
+                    <p class="email">Name:</p>
+                    <input type="text" name="entry.2005620554" id="entry.2005620554">
+                    <br>
+                    <br>
+                    <p class="email">Email:</p>
+                    <input type="email" name="entry.1045781291" id="entry.1045781291">
+                    <br>
+                    <br>
+                    <p class="email">Message:</p>
+                    <textarea id="entry.839337160" name="entry.839337160"  style="height:100px"></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>      
+        </div>
+
+        <!-- Sidebar -->
+        <div class="col-container">                
             <div class="colA">
-                <a href="mailto:&#116;&#097;&#121;&#108;&#111;&#114;&#046;&#118;&#105;&#108;&#108;&#097;&#104;&#101;&#114;&#109;&#111;&#115;&#097;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;" target="_blank">
+                <a href="#" onclick="return theFunction();">
                     <img src="img/email.png">
                 </a>
-                <a href="mailto:&#116;&#097;&#121;&#108;&#111;&#114;&#046;&#118;&#105;&#108;&#108;&#097;&#104;&#101;&#114;&#109;&#111;&#115;&#097;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;" target="_blank">
-                    <p>Email</p>
+                <a href="#" onclick="return theFunction();">
+                    <p class="buttons">Email</p>
                 </a>
-            
-            </div>
-            
-            <div class="colA">
+                <br>
+
                 <a href="https://www.linkedin.com/in/taylorvillahermosa/" target="_blank">
                     <img src="img/linkedin.png">
                 </a>
                 <a href="https://www.linkedin.com/in/taylorvillahermosa/" target="_blank">
-                    <p>LinkedIn</p>
+                    <p class="buttons">LinkedIn</p>
                 </a>
-            </div>
+                <br>
 
-            <div class="colA">
-              <a href="https://github.com/taylorvillahermosa" target="_blank">
-                <img src="img/github_logo.png" >
-              </a>
-              <a href="https://github.com/taylorvillahermosa" target="_blank">
-                <p>Github</p>
-              </a>
-            </div>
+                <a href="https://github.com/taylorvillahermosa" target="_blank">
+                    <img src="img/github_logo.png" >
+                  </a>
+                  <a href="https://github.com/taylorvillahermosa" target="_blank">
+                    <p class="buttons">Github</p>
+                  </a>
+                  <br>
 
-            <div class="colA">
-                <a href="Taylor_Villahermosa_Resume_2021.pdf" target="_blank">
+                  <a href="Taylor_Villahermosa_Resume_2021.pdf" target="_blank">
                     <img src="img/resume_icon.png">
                 </a>
                 <a href="Taylor_Villahermosa_Resume_2021.pdf" target="_blank">
-                    <p>Resume</p>
+                    <p class="buttons">Resume</p>
                 </a>
-                
             </div>
+
         </div>
+        
+        <!-- <div class="foot">
+            <br>
+            <br>
+            <br>
+            <p class="bottom">Powered by Taylor V.</p>
+        </div> -->
+            
     </div>
-</body>
+    <div class="footer">
+        <p class="bottom">&#9857; Powered by Taylor V &#9858;</p>
+    </div>
+    
+    
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+      <script>
+      function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+      </script>
+      <script type="text/javascript">
+        function theFunction () {
+            document.getElementById("contact").click();
+        }
+        </script>
+      <script src="assets/js/jquery.min.js"></script>
+      <script type="text/javascript">var submitted=false;</script>
+      <script type="text/javascript">
+      $('#gform').on('submit', function(e) {
+        $('#gform *').fadeOut(2000);
+        $('#gform').prepend('Your submission has been processed...');
+        });
+      </script>
+
+    <script>
+    function myFunction() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+    
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        // btnText.innerHTML = "Read more"; 
+        btnText.innerHTML = "&#9661;&#9661;&#9661;";
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        // btnText.innerHTML = "Read less"; 
+        btnText.innerHTML = "&#9651;&#9651;&#9651;";
+        moreText.style.display = "inline";
+      }
+    }
+    </script>
+    <script>
+    function expand_proj(x){
+        // close open projects
+        for (i = 1; i < 4; i++) {
+            if (i !== x){
+                var other_dots = document.getElementById("dots"+i);
+                var other_text = document.getElementById("more"+i);
+
+                if (other_dots.style.display === "none") {
+                    other_dots.style.display = "inline";
+                    other_text.style.display = "none";
+                }
+            }
+        }
+
+        var dots = document.getElementById("dots"+x);
+        var moreText = document.getElementById("more"+x);
+        var text = document.getElementById("text"+x);
+        
+        // close project
+        if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            moreText.style.display = "none";
+        } else { // open project
+            dots.style.display = "none"; 
+            moreText.style.display = "inline";
+            text.classList.add("C"+x)
+        }
+    }
+
+    </script>
+    <script>
+        function openTab(tabName) {
+          var i, x;
+          x = document.getElementsByClassName("containerTab");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          document.getElementById(tabName).style.display = "block";
+        }
+        </script>
+    
+    </body>
+
 </html>
