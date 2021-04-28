@@ -58,7 +58,8 @@ p.name {
 
 p.intro {
   margin: 0em;
-  font-size: calc(12px + 0.2vw);
+  /* font-size: calc(12px + 0.2vw); */
+  font-size: calc(14px + 0.2vw);
     /* font-family: Open Sans; */
     /* color: #495464; */
   text-align: center;
